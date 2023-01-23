@@ -1,5 +1,21 @@
 controllers:
-    resource:
-        path: ../src/Controller/
-        namespace: App\Controller
-    type: attribute
+  resource:
+    path: ../src/Controller/
+    namespace: App\Controller
+  type: attribute
+
+index:
+  path: /
+  controller: App\Controller\IndexController::index
+
+login:
+  path: /login
+  controller: App\Controller\LoginController::loginForm
+
+logout:
+  path: /logout
+  controller: App\Controller\LoginController::logout
+
+loginaction:
+  path: /login-action
+  controller: App\Controller\LoginController::loginAction

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to Symfony!</title>
+    </head>
+    <body>
+        <h1>{{ page_title }}</h1>
+        <h2>{{ nama }}</h2>
+        <form method="post" action="/login-action">
+          <label for="email">Username:</label>
+          <input type="text" id="username" name="email">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password">
+
+          <button type="submit">Log in</button>
+        </form>
+
+        {{ error}}
+    </body>
+</html>
